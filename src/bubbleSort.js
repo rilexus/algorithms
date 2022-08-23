@@ -1,5 +1,5 @@
 function bubbleSort(array) {
-  if (array.length === 0) return array;
+  if (array.length <= 1) return array;
 
   const swap = (i, j) => {
     const temp = array[i];
