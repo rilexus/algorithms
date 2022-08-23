@@ -2,13 +2,14 @@ const linearSearch = require("./src/linearSearch");
 const binarySearch = require("./src/binarySearch");
 const bubbleSort = require("./src/bubbleSort");
 const LinkedList = require("./src/LinkedList");
+const Queue = require("./src/Queue");
 
-const list = new LinkedList();
+const q = new Queue();
 
-list.append(1);
-list.append(4);
-list.prepend(2);
-list.prepend(1);
-list.append(5);
+q.enqueue(1);
+q.enqueue(2);
+q.enqueue(3);
 
-console.log(list.toString());
+q.dequeue();
+
+console.log(q.toString());

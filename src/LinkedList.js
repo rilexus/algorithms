@@ -37,7 +37,7 @@ class LinkedList {
   }
 
   toString() {
-    return [...this].join(", ");
+    return [...this].join(",");
   }
 
   [Symbol.iterator]() {
