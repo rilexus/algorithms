@@ -3,13 +3,11 @@ const binarySearch = require("./src/binarySearch");
 const bubbleSort = require("./src/bubbleSort");
 const LinkedList = require("./src/LinkedList");
 const Queue = require("./src/Queue");
+const Stack = require("./src/Stack");
 
-const q = new Queue();
-
-q.enqueue(1);
-q.enqueue(2);
-q.enqueue(3);
-
-q.dequeue();
+const q = new Stack();
+q.push(1);
+q.push(2);
+q.push(3);
 
 console.log(q.toString());
