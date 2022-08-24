@@ -4,10 +4,8 @@ const bubbleSort = require("./src/bubbleSort");
 const LinkedList = require("./src/LinkedList");
 const Queue = require("./src/Queue");
 const Stack = require("./src/Stack");
+const deepClone = require("./src/deepClone");
 
-const q = new Stack();
-q.push(1);
-q.push(2);
-q.push(3);
+const source = { k: () => {}, s: "stan", a: [1, { m: 2, k: { h: 2 } }] };
 
-console.log(q.toString());
+const clone = deepClone(source);
