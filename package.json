@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "prettier": "^2.7.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "@types/node": "^18.7.14"
   },
   "author": "",
   "license": "ISC"
