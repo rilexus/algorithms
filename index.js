@@ -9,11 +9,18 @@ const quickSort = require("./src/quickSort");
 const DoublyLinkedList = require("./src/DoublyLinkedList");
 const BinaryTree = require("./src/BinaryTree");
 
-const tree = new BinaryTree();
+const tree1 = new BinaryTree();
+const tree2 = new BinaryTree();
 
-tree.add(10);
-tree.add(12);
-tree.add(8);
-tree.add(9);
+tree1.add(10);
+tree1.add(12);
+tree1.add(8);
+tree1.add(9);
 
-console.log(tree.breathFirst());
+tree2.add(10);
+tree2.add(12);
+tree2.add(8);
+tree2.add(9);
+tree2.add(11);
+
+console.log(tree1.compare(tree1.root, tree2.root));

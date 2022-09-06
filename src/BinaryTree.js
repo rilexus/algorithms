@@ -109,6 +109,24 @@ class BinaryTree {
 
     return res;
   }
+
+  compare(node1, node2) {
+    if (node1 === null && node2 === null) {
+      return true;
+    }
+    if (node1 === null || node2 === null) {
+      return false;
+    }
+    if (node1.value !== node2.value) {
+      return false;
+    }
+    console.log(node1.value, node2.value);
+
+    return (
+      this.compare(node1.left, node2.left) &&
+      this.compare(node1.right, node2.right)
+    );
+  }
 }
 
 module.exports = BinaryTree;
