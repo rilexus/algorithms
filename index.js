@@ -23,4 +23,4 @@ tree2.add(8);
 tree2.add(9);
 tree2.add(11);
 
-console.log(tree1.compare(tree1.root, tree2.root));
+console.log(tree1.find(33));

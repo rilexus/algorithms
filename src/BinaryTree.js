@@ -110,6 +110,25 @@ class BinaryTree {
     return res;
   }
 
+  #find(node, value) {
+    if (!node) {
+      return false;
+    }
+    if (node.value === value) {
+      return true;
+    }
+    if (value >= node.value) {
+      return this.#find(node.right, value);
+    }
+    if (value <= node.value) {
+      return this.#find(node.left, value);
+    }
+  }
+
+  find(value) {
+    return this.#find(this.root, value);
+  }
+
   compare(node1, node2) {
     if (node1 === null && node2 === null) {
       return true;
