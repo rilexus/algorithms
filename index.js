@@ -9,10 +9,39 @@ const quickSort = require("./src/quickSort");
 const DoublyLinkedList = require("./src/DoublyLinkedList");
 const BinaryTree = require("./src/BinaryTree");
 const Trie = require("./src/Trie");
+const Graph = require("./src/Graph");
 
-const trie = new Trie();
+const graphList = [
+  [
+    // 0
+    {
+      to: 1,
+    },
+    {
+      to: 4,
+    },
+  ],
+  [
+    // 1
+    {
+      to: 2,
+    },
+  ],
+  [
+    // 2
+  ],
+  [
+    // 3
+    { to: 1 },
+    { to: 2 },
+  ],
+  [
+    // 4
+    { to: 1 },
+    { to: 3 },
+  ],
+];
 
-trie.insert("some");
-trie.insert("sapa");
+const graph = new Graph(graphList);
 
-console.log(trie.root.children.s.children.a.children.p.children.a);
+console.log(graph.find(3, 0));
